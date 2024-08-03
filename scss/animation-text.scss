@@ -1,0 +1,52 @@
+// Définition des variables
+$primary-bg: #091c3b;
+$primary-color: white;
+$font-weight-initial: 100;
+$font-weight-final: 900;
+$animation-duration: 3s;
+$animation-delay-increment: 0.3s;
+$font-size: 1.8em;
+$total-lines: 10;
+
+/************************************** Animation texte **************************************/
+#animatedText {
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.text-line {
+  font-variation-settings: "wght" $font-weight-initial, "ital" 0;
+  font-family: "Open Sans";
+  font-size: $font-size;
+  line-height: 80%;
+  color: $primary-color;
+  white-space: nowrap;
+
+  // Regroupement des propriétés d'animation
+  animation: change $animation-duration infinite ease-in-out;
+
+  // Génération automatique des délais d'animation
+  @for $line from 1 through $total-lines {
+    &:nth-child(#{$line}) {
+      animation-delay: #{$line * $animation-delay-increment};
+    }
+  }
+}
+
+// Keyframes pour le changement de poids
+@keyframes change {
+  0%,
+  100% {
+    font-variation-settings: "wght" $font-weight-initial;
+  }
+
+  50% {
+    font-variation-settings: "wght" $font-weight-final;
+  }
+}

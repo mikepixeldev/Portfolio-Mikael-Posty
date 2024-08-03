@@ -1,4 +1,5 @@
 /* Reset de base pour normaliser les styles entre différents navigateurs */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,77 +9,80 @@
 /* Importation des polices personnalisées */
 @font-face {
   font-family: "LilGrotesk";
-  src: url("../assets/fonts/lilgrotesk-regular-webfont.woff2") format("woff2"),
-    url("../assets/fonts/lilgrotesk-regular-webfont.woff") format("woff"),
-    url("../assets/fonts/LilGrotesk-Regular.otf") format("opentype");
+  src: url("../assets/fonts/lilgrotesk-regular-webfont.woff2") format("woff2"), url("../assets/fonts/lilgrotesk-regular-webfont.woff") format("woff"), url("../assets/fonts/LilGrotesk-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "LilGrotesk";
-  src: url("../assets/fonts/lilgrotesk-bold-webfont.woff2") format("woff2"),
-    url("../assets/fonts/lilgrotesk-bold-webfont.woff") format("woff"),
-    url("../assets/fonts/LilGrotesk-Bold.otf") format("opentype");
+  src: url("../assets/fonts/lilgrotesk-bold-webfont.woff2") format("woff2"), url("../assets/fonts/lilgrotesk-bold-webfont.woff") format("woff"), url("../assets/fonts/LilGrotesk-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 /* Styles pour le corps de la page */
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  line-height: 1.6; /* Une bonne hauteur de ligne pour améliorer la lisibilité */
-  color: #333; /* Couleur du texte */
-  background-color: #f4f4f4; /* Couleur de fond de la page */
+  line-height: 1.6;
+
+  /* Une bonne hauteur de ligne pour améliorer la lisibilité */
+  color: #333;
+
+  /* Couleur du texte */
+  background-color: #f4f4f4;
+
+  /* Couleur de fond de la page */
 }
 
 /* Styles pour les titres h1 à h6 */
-h1,
-h2,
-h3 {
+
+h1, h2, h3 {
   font-family: "LilGrotesk", "Noto Sans", Arial, sans-serif;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   /* Plus grand titre, souvent en gras */
   font-weight: bold;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 1rem; /* Ajoute un espace sous les titres */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+
+  /* Ajoute un espace sous les titres */
   /* Rend les titres légèrement plus foncés que le texte normal */
 }
 
 /* Styles pour les liens */
+
 a {
   color: #fbd304;
   text-decoration: none;
   font-weight: bold;
-}
 
-a:hover,
-a:focus {
-  text-decoration: underline;
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
 }
 
 /* Styles pour les images */
+
 img {
-  max-width: 100%; /* Les images ne dépassent pas leur conteneur */
-  height: auto; /* Garde les proportions de l'image intactes */
+  max-width: 100%;
+
+  /* Les images ne dépassent pas leur conteneur */
+  height: auto;
+
+  /* Garde les proportions de l'image intactes */
 }
 
 /* Styles utiles pour le développement */
-div,
-section,
-article {
-  padding: 0.4rem; /* Un peu de padding à l'intérieur des boîtes */
+
+div, section, article {
+  padding: 0.4rem;
+
+  /* Un peu de padding à l'intérieur des boîtes */
 }
 
 html {
@@ -150,12 +154,12 @@ nav {
   flex-direction: row;
   justify-content: center;
   gap: 1em;
-}
 
-.menu ul {
-  display: flex;
-  list-style-type: none;
-  gap: 1em;
+  ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+  }
 }
 
 main {
@@ -189,10 +193,10 @@ main {
 
 .hero-text {
   padding: 0;
-}
 
-.hero-text p {
-  font-size: 1.1rem;
+  p {
+    font-size: 1.1rem;
+  }
 }
 
 /************************************** Compétences **************************************/
@@ -207,25 +211,25 @@ main {
   color: white;
   border-radius: 12px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
-}
 
-#competences h2 {
-  margin: 0;
-}
+  h2 {
+    margin: 0;
+  }
 
-#competences li {
-  list-style-type: none;
-  list-style-type: none;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 0.5rem;
-  background-color: rgba(9, 28, 59, 0.5);
-  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
-}
+  li {
+    list-style-type: none;
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: rgba(9, 28, 59, 0.5);
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+  }
 
-#competences i {
-  font-size: 1.5rem;
-  margin-right: 0.5rem;
+  i {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
 }
 
 .skills-img {
@@ -233,14 +237,11 @@ main {
   align-self: center;
 }
 
-.skills,
-.soft-skills,
-.design-focus {
+.skills, .soft-skills, .design-focus {
   padding: 0;
 }
 
-.skills-list,
-.soft-skills-list {
+.skills-list, .soft-skills-list {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -256,10 +257,10 @@ main {
   background-color: #eeeeee;
   border-radius: 12px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
-}
 
-#projets h2 {
-  padding-left: 1.1rem;
+  h2 {
+    padding-left: 1.1rem;
+  }
 }
 
 .projet-cards {
@@ -287,24 +288,20 @@ main {
 }
 
 .kasa {
+  background-color: #FF6060;
+
+  .repo-link {
     background-color: #FF6060;
+  }
 }
 
 /* Bouton du projet Kasa */
-.kasa .repo-link {
-    background-color: #FF6060;
-}
 
 .cinematch {
   background-color: #03a062;
 }
 
-.projet-half {
-  flex: 1;
-}
-
-.projet-texte,
-.projet-pres {
+.projet-half, .projet-texte, .projet-pres {
   flex: 1;
 }
 
@@ -318,27 +315,32 @@ main {
   padding: 1.5rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
-}
-.projet-texte h3 {
-  margin: 0;
+
+  h3 {
+    margin: 0;
+  }
 }
 
 /* Bouton du projet Sophie Bluel */
+
 .sophiebluel .repo-link {
   background-color: #b1663c;
 }
 
 /* Bouton du projet Ohmyfood */
+
 .ohmyfood .repo-link {
   background-color: #7459a2;
 }
 
 /* Bouton du projet Cinematch */
+
 .cinematch .repo-link {
   background-color: #03a062;
 }
 
 /* Bouton projet */
+
 .repo-link {
   display: flex;
   flex-direction: row;
@@ -352,10 +354,11 @@ main {
   color: black;
   text-decoration: none;
   margin: 1em;
-}
-.repo-link p {
-  font-size: 0.8rem;
-  font-weight: bold;
+
+  p {
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
 }
 
 .ohmyfood .repo-link {
@@ -370,6 +373,7 @@ main {
   gap: 1em;
   padding: 1.5rem;
 }
+
 .img-projet {
   padding: 3rem;
   max-height: 150px;
@@ -401,30 +405,30 @@ main {
   text-decoration: none;
   margin: 1em;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
-}
 
-.projets-voir-plus p {
-  font-size: 0.95rem;
-  font-weight: 800;
+  p {
+    font-size: 0.95rem;
+    font-weight: 800;
+  }
 }
 
 /************************************** Timeline **************************************/
 
 /* Définition de la couleur de fond et de la typographie pour le corps de la page */
+
 #parcours {
   display: flex;
   flex-direction: column;
   gap: 1.1em;
-
   background-color: #fbd304;
   padding: 1.1rem;
   margin: 0.5rem;
   border-radius: 12px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
-}
 
-#parcours h2 {
-  margin: 0;
+  h2 {
+    margin: 0;
+  }
 }
 
 .parcours-img {
@@ -433,54 +437,57 @@ main {
 }
 
 /* Configuration de la ligne verticale de la frise chronologique */
+
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
-}
 
-.timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 31px;
-  margin-left: -3px;
-  border-radius: 0.5rem;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    margin-left: -3px;
+    border-radius: 0.5rem;
+  }
 }
 
 /* Styles des conteneurs pour les éléments de la frise */
+
 .experience {
   padding: 10px 25px 10px 70px;
   position: relative;
   background-color: inherit;
   width: 100%;
-}
 
-.experience::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
+  &::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
 
-.experience::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #091c3b;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #091c3b;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
 }
 
 /* Positionnement des conteneurs à gauche et à droite */
+
 .timeline-left {
   left: 0;
 }
@@ -489,7 +496,7 @@ main {
   left: 0%;
 }
 
-.timeline-left::before {
+.timeline-left::before, .timeline-right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -502,25 +509,12 @@ main {
   border-color: transparent white transparent transparent;
 }
 
-.timeline-right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-.timeline-left::after,
-.timeline-right::after {
+.timeline-left::after, .timeline-right::after {
   left: 15px;
 }
 
 /* Styles pour le contenu dans les conteneurs */
+
 .timeline-infos {
   display: flex;
   flex-direction: column;
@@ -529,14 +523,14 @@ main {
   background-color: white;
   position: relative;
   border-radius: 0.8rem;
-}
 
-.timeline-infos img {
-  max-height: 1.5rem;
-}
+  img {
+    max-height: 1.5rem;
+  }
 
-.timeline-infos h3 {
-  margin: 0;
+  h3 {
+    margin: 0;
+  }
 }
 
 .collabs {
@@ -555,11 +549,11 @@ main {
   gap: 1em;
   height: 4em;
   padding: 0;
-}
 
-.collab-logos img {
-  max-height: 2rem;
-  max-width: 100%;
+  img {
+    max-height: 2rem;
+    max-width: 100%;
+  }
 }
 
 .years-timeline {
@@ -569,6 +563,7 @@ main {
 }
 
 /* Cache les titres h3 */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -581,6 +576,7 @@ main {
 }
 
 /************************************** Contact **************************************/
+
 #contact {
   display: flex;
   flex-direction: column;
@@ -592,20 +588,20 @@ main {
   color: white;
   border-radius: 12px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
-}
 
-#contact h2 {
-  margin: 0;
+  h2 {
+    margin: 0;
+  }
 }
 
 .contact-info {
   padding: 0 0 1rem 0;
-}
 
-.contact-info a {
-  font-weight: 700;
-  color: #fbd304;
-  cursor: pointer;
+  a {
+    font-weight: 700;
+    color: #fbd304;
+    cursor: pointer;
+  }
 }
 
 .contact-img {
@@ -624,16 +620,16 @@ main {
   position: relative;
   width: 100%;
   padding-top: 1rem;
-}
 
-#social-media::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  top: 0;
-  border-top: 2px solid #fbd304;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    top: 0;
+    border-top: 2px solid #fbd304;
+  }
 }
 
 .social-icons {
@@ -644,14 +640,15 @@ main {
   gap: 1rem;
   height: 5rem;
   color: white;
-}
 
-.social-icons a {
-  color: white;
-  cursor: pointer;
+  a {
+    color: white;
+    cursor: pointer;
+  }
 }
 
 /************************************** Footer **************************************/
+
 footer {
   display: flex;
   justify-content: center;
@@ -662,13 +659,14 @@ footer {
 #copyright {
   font-size: 0.8rem;
   font-weight: 900;
-}
 
-#copyright a {
-  color: #c3342d;
+  a {
+    color: #c3342d;
+  }
 }
 
 /* Bouton de retour en haut */
+
 #backToTop {
   display: none;
   position: fixed;
@@ -706,22 +704,16 @@ footer {
 
 @media only screen and (min-width: 390px) {
   /* Styles pour iPhone modernes */
-  #about,
-  #competences,
-  #projets,
-  #parcours,
-  #contact {
+
+  #about, #competences, #projets, #parcours, #contact {
     padding: 1.2rem;
   }
 }
 
 @media only screen and (min-width: 428px) {
   /* Styles pour iPhone Plus & Max modernes */
-  #about,
-  #competences,
-  #projets,
-  #parcours,
-  #contact {
+
+  #about, #competences, #projets, #parcours, #contact {
     padding: 1.3rem;
   }
 }
@@ -729,11 +721,8 @@ footer {
 /* ********** S · 428 - 600 dp ********** */
 @media only screen and (min-width: 480px) and (max-width: 600px) {
   /* Styles adaptés pour les petits smartphones plus grands (S) */
-  #about,
-  #competences,
-  #projets,
-  #parcours,
-  #contact {
+
+  #about, #competences, #projets, #parcours, #contact {
     padding: 1.4rem;
   }
 }
@@ -757,11 +746,8 @@ footer {
   h3 {
     font-size: 1.25rem;
   }
-  #about,
-  #competences,
-  #projets,
-  #parcours,
-  #contact {
+
+  #about, #competences, #projets, #parcours, #contact {
     padding: 1.5rem;
   }
 
@@ -779,6 +765,7 @@ footer {
 /* ********** L · 768 - 1024 dp ********** */
 @media only screen and (min-width: 768px) {
   /* Styles pour tablettes en portrait */
+
   html {
     font-size: 16px;
   }
@@ -786,25 +773,21 @@ footer {
   h1 {
     font-size: 3rem;
   }
+
   h2 {
     font-size: 2.75rem;
   }
+
   h3 {
     font-size: 2rem;
   }
 
-  #about,
-  #competences,
-  #projets,
-  #parcours,
-  #contact {
+  #about, #competences, #projets, #parcours, #contact {
     padding: 1.5rem;
     margin: 1rem;
   }
 
-  #competences h2,
-  #projets h2,
-  #contact h2 {
+  #competences h2, #projets h2, #contact h2 {
     display: flex;
     align-self: center;
   }
@@ -833,20 +816,22 @@ footer {
   }
 
   /***** Timeline *****/
+
   .timeline {
     width: 85%;
-  }
-  .timeline::after {
-    left: 50%;
+
+    &::after {
+      left: 50%;
+    }
   }
 
   .experience {
     padding: 10px 40px;
     width: 50%;
-  }
 
-  .experience::before {
-    left: auto;
+    &::before {
+      left: auto;
+    }
   }
 
   .timeline-right {
@@ -871,11 +856,10 @@ footer {
     left: -16px;
   }
 
-  .skills-img,
-  .parcours-img,
-  .contact-img {
+  .skills-img, .parcours-img, .contact-img {
     width: auto;
   }
+
   .collabs {
     gap: 0.9rem;
   }
@@ -887,17 +871,18 @@ footer {
 
   .social-icons .fa-2xl {
     font-size: 2.5rem;
-  }
 
-  .social-icons .fa-2xl:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-    text-decoration: none;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+    }
   }
 }
 
 @media only screen and (min-width: 992px) {
   /* Styles pour tablettes en paysage et petits laptops */
+
   .hero-text {
     display: flex;
     flex-direction: column;
@@ -907,6 +892,7 @@ footer {
   #social-media h3 {
     align-self: center;
   }
+
   .social-icons {
     width: 75%;
     margin: 0 auto;
@@ -915,21 +901,20 @@ footer {
 
 @media only screen and (min-width: 1024px) {
   /* Styles pour dispositifs autour de 1024px */
+
   h1 {
     font-size: 3.5rem;
   }
+
   h2 {
     font-size: 3rem;
   }
+
   h3 {
     font-size: 2.25rem;
   }
 
-  #about,
-  #competences,
-  #projets,
-  #parcours,
-  #contact {
+  #about, #competences, #projets, #parcours, #contact {
     padding: 2.5rem;
     margin: 2rem;
   }
@@ -938,8 +923,7 @@ footer {
     padding-left: 1rem;
   }
 
-  .projet-texte,
-  .projet-pres {
+  .projet-texte, .projet-pres {
     padding: 4rem;
     gap: 2rem;
   }
@@ -951,7 +935,7 @@ footer {
   }
 
   .projets-voir-plus:hover {
-    transform: scale(1.05);
+    transform: scale(1.2);
     transition: transform 0.3s ease;
     text-decoration: none;
   }
@@ -964,27 +948,30 @@ footer {
     font-size: 0.85rem;
   }
 
-  #contact p,
-  .contact-info {
+  #contact p {
     align-self: center;
   }
 
   .contact-info {
+    align-self: center;
     display: flex;
     flex-direction: column;
   }
+
   /* Bouton de retour en haut */
+
   #backToTop {
     width: 4.5em;
     height: 4.5em;
     opacity: 0.7;
-  }
 
-  #backToTop:hover {
-    opacity: 1;
-  }
-  #backToTop:focus {
-    outline: 2px solid red;
+    &:hover {
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: 2px solid red;
+    }
   }
 }
 
@@ -992,6 +979,7 @@ footer {
 /* ********** XL · 1025 - 1440 dp ********** */
 @media only screen and (min-width: 1280px) {
   /* Styles pour grands écrans de bureau */
+
   html {
     font-size: 17px;
   }
@@ -999,18 +987,25 @@ footer {
   h1 {
     font-size: 4.25rem;
   }
+
   h2 {
     font-size: 7.5rem;
   }
+
   h3 {
     font-size: 5.25rem;
   }
-  .timeline-infos h3 {
-    font-size: 2rem;
+
+  .timeline-infos {
+    h3 {
+      font-size: 2rem;
+    }
+
+    img {
+      max-height: 2.5rem;
+    }
   }
-  .timeline-infos img {
-    max-height: 2.5rem;
-  }
+
   .social-icons {
     width: 50%;
   }

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* Keyframes pour l'animation de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Application de l'animation aux sections avec un délai progressif */
+#about,
+#competences,
+#projets,
+#parcours,
+#contact {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+#about {
+  animation-delay: 0.5s;
+}
+
+#competences {
+  animation-delay: 1s;
+}
+
+#projets {
+  animation-delay: 1.5s;
+}
+
+#parcours {
+  animation-delay: 2s;
+}
+
+#contact {
+  animation-delay: 2.5s;
+}/*# sourceMappingURL=cards.css.map */

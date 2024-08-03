@@ -1,0 +1,41 @@
+/* Keyframes pour l'animation de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Application de l'animation aux sections avec un délai progressif */
+#about,
+#competences,
+#projets,
+#parcours,
+#contact {
+  animation: fadeIn 1s ease-out forwards;
+  opacity: 0; // Commencez invisible pour l'animation
+}
+
+#about {
+  animation-delay: 0.5s; // Démarrage après 0.5 secondes
+}
+
+#competences {
+  animation-delay: 1s; // Démarrage après 1 seconde
+}
+
+#projets {
+  animation-delay: 1.5s; // Démarrage après 1.5 secondes
+}
+
+#parcours {
+  animation-delay: 2s; // Démarrage après 2 secondes
+}
+
+#contact {
+  animation-delay: 2.5s; // Démarrage après 2.5 secondes
+}

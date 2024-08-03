@@ -1,0 +1,1025 @@
+/* Reset de base pour normaliser les styles entre différents navigateurs */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Importation des polices personnalisées */
+@font-face {
+  font-family: "LilGrotesk";
+  src: url("../assets/fonts/lilgrotesk-regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/lilgrotesk-regular-webfont.woff") format("woff"),
+    url("../assets/fonts/LilGrotesk-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LilGrotesk";
+  src: url("../assets/fonts/lilgrotesk-bold-webfont.woff2") format("woff2"),
+    url("../assets/fonts/lilgrotesk-bold-webfont.woff") format("woff"),
+    url("../assets/fonts/LilGrotesk-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Styles pour le corps de la page */
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6; /* Une bonne hauteur de ligne pour améliorer la lisibilité */
+  color: #333; /* Couleur du texte */
+  background-color: #f4f4f4; /* Couleur de fond de la page */
+}
+
+/* Styles pour les titres h1 à h6 */
+h1,
+h2,
+h3 {
+  font-family: "LilGrotesk", "Noto Sans", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  /* Plus grand titre, souvent en gras */
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem; /* Ajoute un espace sous les titres */
+  /* Rend les titres légèrement plus foncés que le texte normal */
+}
+
+/* Styles pour les liens */
+a {
+  color: #fbd304;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Styles pour les images */
+img {
+  max-width: 100%; /* Les images ne dépassent pas leur conteneur */
+  height: auto; /* Garde les proportions de l'image intactes */
+}
+
+/* Styles utiles pour le développement */
+div,
+section,
+article {
+  padding: 0.4rem; /* Un peu de padding à l'intérieur des boîtes */
+}
+
+html {
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+/************************************** Header **************************************/
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  margin: 0;
+  background-color: #091c3b;
+}
+
+.branding {
+  padding-bottom: 1em;
+}
+
+#accueil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.brand {
+  font-family: "Jersey 25", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
+  color: #fbd304;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 3em;
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "LilGrotesk", "Noto Sans", Arial, sans-serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1em;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+/************************************** À propos **************************************/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  padding: 1.1rem;
+  margin: 0.5rem;
+  background-color: #dbcdbc;
+  border-radius: 12px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+}
+
+.hero-image {
+  align-self: center;
+}
+
+.hero-text {
+  padding: 0;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+}
+
+/************************************** Compétences **************************************/
+
+#competences {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.1rem;
+  margin: 0.5rem;
+  background-color: #c3342d;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#competences h2 {
+  margin: 0;
+}
+
+#competences li {
+  list-style-type: none;
+  list-style-type: none;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgba(9, 28, 59, 0.5);
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#competences i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.skills-img {
+  width: 50%;
+  align-self: center;
+}
+
+.skills,
+.soft-skills,
+.design-focus {
+  padding: 0;
+}
+
+.skills-list,
+.soft-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/************************************** Projets **************************************/
+
+#projets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+  margin: 0.5rem;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#projets h2 {
+  padding-left: 1.1rem;
+}
+
+.projet-cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.1em;
+  padding: 0;
+}
+
+.projet {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 12px;
+  padding: 0;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.sophiebluel {
+  background-color: #b1663c;
+}
+
+.ohmyfood {
+  background-color: #7459a2;
+}
+
+.cinematch {
+  background-color: #03a062;
+}
+
+.projet-half {
+  flex: 1;
+}
+
+.projet-texte,
+.projet-pres {
+  flex: 1;
+}
+
+.projet-texte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  border-radius: 12px 12px 0 0;
+  padding: 1.5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.projet-texte h3 {
+  margin: 0;
+}
+
+/* Bouton du projet Sophie Bluel */
+.sophiebluel .repo-link {
+  background-color: #b1663c;
+}
+
+/* Bouton du projet Ohmyfood */
+.ohmyfood .repo-link {
+  background-color: #7459a2;
+}
+
+/* Bouton du projet Cinematch */
+.cinematch .repo-link {
+  background-color: #03a062;
+}
+
+/* Bouton projet */
+.repo-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border: #f4f4f4 solid 1px;
+  border-radius: 20px;
+  color: black;
+  text-decoration: none;
+  margin: 1em;
+}
+.repo-link p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.ohmyfood .repo-link {
+  color: #f4f4f4;
+}
+
+.projet-pres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1.5rem;
+}
+.img-projet {
+  padding: 3rem;
+  max-height: 150px;
+}
+
+.technos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  gap: 0.8rem;
+  padding: 0;
+}
+
+.projets-voir-plus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border: #091c3b solid 1px;
+  border-radius: 20px;
+  color: #091c3b;
+  text-decoration: none;
+  margin: 1em;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+.projets-voir-plus p {
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+/************************************** Timeline **************************************/
+
+/* Définition de la couleur de fond et de la typographie pour le corps de la page */
+#parcours {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1em;
+
+  background-color: #fbd304;
+  padding: 1.1rem;
+  margin: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#parcours h2 {
+  margin: 0;
+}
+
+.parcours-img {
+  width: 50%;
+  align-self: center;
+}
+
+/* Configuration de la ligne verticale de la frise chronologique */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 31px;
+  margin-left: -3px;
+  border-radius: 0.5rem;
+}
+
+/* Styles des conteneurs pour les éléments de la frise */
+.experience {
+  padding: 10px 25px 10px 70px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+.experience::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.experience::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #091c3b;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Positionnement des conteneurs à gauche et à droite */
+.timeline-left {
+  left: 0;
+}
+
+.timeline-right {
+  left: 0%;
+}
+
+.timeline-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline-left::after,
+.timeline-right::after {
+  left: 15px;
+}
+
+/* Styles pour le contenu dans les conteneurs */
+.timeline-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 0.8rem;
+}
+
+.timeline-infos img {
+  max-height: 1.5rem;
+}
+
+.timeline-infos h3 {
+  margin: 0;
+}
+
+.collabs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0;
+}
+
+.collab-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1em;
+  height: 4em;
+  padding: 0;
+}
+
+.collab-logos img {
+  max-height: 2rem;
+  max-width: 100%;
+}
+
+.years-timeline {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Cache les titres h3 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/************************************** Contact **************************************/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #091c3b;
+  padding: 1.1rem;
+  margin: 0.5rem;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+#contact h2 {
+  margin: 0;
+}
+
+.contact-info {
+  padding: 0 0 1rem 0;
+}
+
+.contact-info a {
+  font-weight: 700;
+  color: #fbd304;
+  cursor: pointer;
+}
+
+.contact-img {
+  width: 50%;
+  max-width: 100%;
+  align-self: center;
+}
+
+#social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  border-radius: 12px;
+  position: relative;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+#social-media::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  top: 0;
+  border-top: 2px solid #fbd304;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  height: 5rem;
+  color: white;
+}
+
+.social-icons a {
+  color: white;
+  cursor: pointer;
+}
+
+/************************************** Footer **************************************/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+#copyright {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+#copyright a {
+  color: #c3342d;
+}
+
+/* Bouton de retour en haut */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  padding: 20px;
+  background-color: #091c3b;
+  color: white;
+  border: 2px solid #fbd304;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 3.8rem;
+  height: 3.8rem;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   Adaptations spécifiques pour différentes tailles d'écran
+   ========================================================================== */
+
+/************************************** Smartphones **************************************/
+/* ********** XS · max 428 dp ********** */
+@media only screen and (min-width: 320px) {
+  /* Styles pour très petits écrans et mode zoom iOS */
+}
+
+@media only screen and (min-width: 360px) {
+  /* Styles pour smartphones */
+}
+
+@media only screen and (min-width: 375px) {
+  /* Styles pour iPhone 6-8 */
+}
+
+@media only screen and (min-width: 390px) {
+  /* Styles pour iPhone modernes */
+  #about,
+  #competences,
+  #projets,
+  #parcours,
+  #contact {
+    padding: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 428px) {
+  /* Styles pour iPhone Plus & Max modernes */
+  #about,
+  #competences,
+  #projets,
+  #parcours,
+  #contact {
+    padding: 1.3rem;
+  }
+}
+
+/* ********** S · 428 - 600 dp ********** */
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  /* Styles adaptés pour les petits smartphones plus grands (S) */
+  #about,
+  #competences,
+  #projets,
+  #parcours,
+  #contact {
+    padding: 1.4rem;
+  }
+}
+
+/* ********** M · 601 - 768 dp ********** */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  /* Styles spécifiques pour les appareils de taille moyenne (M) */
+
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+  #about,
+  #competences,
+  #projets,
+  #parcours,
+  #contact {
+    padding: 1.5rem;
+  }
+
+  .collabs {
+    gap: 0.8rem;
+  }
+
+  .collab-logos img {
+    max-height: 3rem;
+    max-width: 100%;
+  }
+}
+
+/************************************** Tablettes **************************************/
+/* ********** L · 768 - 1024 dp ********** */
+@media only screen and (min-width: 768px) {
+  /* Styles pour tablettes en portrait */
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+
+  #about,
+  #competences,
+  #projets,
+  #parcours,
+  #contact {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  #competences h2,
+  #projets h2,
+  #contact h2 {
+    display: flex;
+    align-self: center;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .projet {
+    flex-direction: row;
+  }
+
+  .projet-texte {
+    border-radius: 12px 0 0 12px;
+    gap: 1.5rem;
+  }
+
+  .projet-pres {
+    justify-content: space-around;
+  }
+
+  #parcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /***** Timeline *****/
+  .timeline {
+    width: 85%;
+  }
+  .timeline::after {
+    left: 50%;
+  }
+
+  .experience {
+    padding: 10px 40px;
+    width: 50%;
+  }
+
+  .experience::before {
+    left: auto;
+  }
+
+  .timeline-right {
+    left: 50%;
+  }
+
+  .timeline-left::before {
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  .timeline-right::before {
+    left: 30px;
+  }
+
+  .timeline-left::after {
+    left: auto;
+    right: -16px;
+  }
+
+  .timeline-right::after {
+    left: -16px;
+  }
+
+  .skills-img,
+  .parcours-img,
+  .contact-img {
+    width: auto;
+  }
+  .collabs {
+    gap: 0.9rem;
+  }
+
+  .collab-logos img {
+    max-height: 3.5rem !important;
+    max-width: 100%;
+  }
+
+  .social-icons .fa-2xl {
+    font-size: 2.5rem;
+  }
+
+  .social-icons .fa-2xl:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Styles pour tablettes en paysage et petits laptops */
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem;
+  }
+
+  #social-media h3 {
+    align-self: center;
+  }
+  .social-icons {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Styles pour dispositifs autour de 1024px */
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  #about,
+  #competences,
+  #projets,
+  #parcours,
+  #contact {
+    padding: 2.5rem;
+    margin: 2rem;
+  }
+
+  #competences li {
+    padding-left: 1rem;
+  }
+
+  .projet-texte,
+  .projet-pres {
+    padding: 4rem;
+    gap: 2rem;
+  }
+
+  .repo-link:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+
+  .projets-voir-plus:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+
+  .timeline-infos img {
+    max-height: 2rem;
+  }
+
+  .years-timeline {
+    font-size: 0.85rem;
+  }
+
+  #contact p,
+  .contact-info {
+    align-self: center;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Bouton de retour en haut */
+  #backToTop {
+    width: 4.5em;
+    height: 4.5em;
+    opacity: 0.7;
+  }
+
+  #backToTop:hover {
+    opacity: 1;
+  }
+  #backToTop:focus {
+    outline: 2px solid red;
+  }
+}
+
+/************************************** Desktop **************************************/
+/* ********** XL · 1025 - 1440 dp ********** */
+@media only screen and (min-width: 1280px) {
+  /* Styles pour grands écrans de bureau */
+  html {
+    font-size: 17px;
+  }
+
+  h1 {
+    font-size: 4.25rem;
+  }
+  h2 {
+    font-size: 7.5rem;
+  }
+  h3 {
+    font-size: 5.25rem;
+  }
+  .timeline-infos h3 {
+    font-size: 2rem;
+  }
+  .timeline-infos img {
+    max-height: 2.5rem;
+  }
+  .social-icons {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  /* Styles pour MacBook 13" */
+}
+
+/* ********** XXL · min 1441 dp ********** */
+@media only screen and (min-width: 1440px) {
+  /* Styles pour MacBook 15" */
+}
+
+@media only screen and (min-width: 1920px) {
+  /* Styles pour écrans extra-larges */
+}
+
+@media only screen and (min-width: 2560px) {
+  /* Styles pour écrans extra-larges */
+}

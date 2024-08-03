@@ -1,0 +1,201 @@
+/* Définition des variables globales */
+:root {
+  --main-bg-color: #091c3b; /* couleur de fond principale */
+  --primary-color: #fbd304; /* couleur primaire pour les éléments accentués */
+  --hover-color: #ffffff; /* couleur au survol */
+  --font-main: "Open Sans", sans-serif; /* police principale */
+  --font-title: "ABeeZee", sans-serif; /* police pour les titres */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--main-bg-color);
+  color: var(--hover-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.memoji {
+  height: 10em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+#waiting {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.5em;
+}
+
+/* Style de base pour les points */
+.point {
+  width: 10px;
+  height: 10px;
+  background-color: #c3342d;
+  border-radius: 50%;
+  opacity: 0.2;
+  margin: 0 5px;
+  display: inline-block;
+  animation: blink 3s infinite linear;
+}
+
+/* Animation avec les @keyframes */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  16%,
+  33% {
+    opacity: 1;
+  }
+}
+
+/* Application de l'animation avec un décalage pour chaque point */
+.point:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.point:nth-child(2) {
+  animation-delay: 1s; /* Chaque point commence son cycle 1 seconde après le précédent */
+}
+
+.point:nth-child(3) {
+  animation-delay: 2s;
+}
+
+/* Style texte d'accueil */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.8em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-title);
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  max-width: 650px;
+  gap: 30px;
+  margin: 1em 0;
+}
+
+.social-media-links a {
+  color: var(--primary-color);
+  font-size: 3em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media-links a:hover {
+  color: var(--hover-color);
+  transform: scale(1.2);
+}
+
+.blog-invite {
+  text-align: center;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.blog-invite p {
+  color: var(--hover-color);
+  margin-bottom: 0.9em;
+}
+
+.blog-invite a img {
+  width: 150px;
+  transition: opacity 0.3s ease;
+}
+
+.blog-invite a:hover img {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  padding: 20px;
+  font-family: var(--font-title);
+  margin-top: 5%;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .social-media-links {
+    max-width: 450px;
+    gap: 20px;
+  }
+  .social-media-links a {
+    font-size: 2em;
+  }
+}
+@media (max-width: 455px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .social-media-links {
+    max-width: 370px;
+    gap: 15px;
+  }
+  .social-media-links a {
+    font-size: 1.8em;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}

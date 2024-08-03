@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Titre de la page -->
+    <title>Développeur front-end • Mikaël Posty</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Mikaël Posty, développeur web front-end spécialisé en React. Découvrez mes compétences, projets et contributions en développement intégrateur web">
+    <meta name="author" content="Mikaël Posty">
+    <meta name="robots" content="index, follow">
+
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="./css/style-temp-min.css">
+    <link rel="stylesheet" href="./css/cards-min.css">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicons/favicon-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicons/favicon-96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicons/apple-touch-icon.png">
+
+
+    <!-- Balise URL canonique -->
+    <link rel="canonical" href="https://portfolio.mikepixel.dev">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C0DCNBD5VG"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C0DCNBD5VG');
+    </script>
+
+    <!-- Open Graph Meta Tags pour les réseaux sociaux -->
+    <meta property="og:title" content="Développeur front-end • Mikaël Posty">
+    <meta property="og:description"
+        content="Portfolio de Mikaël Posty, développeur web front-end spécialisé en React. Découvrez mes compétences, projets et contributions en développement intégrateur web">
+    <meta property="og:image" content="./img/logo-mike-pixel.webp">
+    <meta property="og:url" content="https://portfolio.mikepixel.dev">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Développeur front-end • Mikaël Posty">
+    <meta name="twitter:description"
+        content="Portfolio de Mikaël Posty, développeur web front-end spécialisé en React. Découvrez mes compétences, projets et contributions en développement intégrateur web">
+    <meta name="twitter:image" content="./img/logo-mike-pixel.webp">
+
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mikaël Posty",
+  "jobTitle": "Développeur Front-end",
+  "email": "hello@mikepixel.dev",
+  "url": "https://portfolio.mikepixel.dev",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Paris",
+    "addressCountry": "France"
+  },
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "EPITECH"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Simplon"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "OpenClassRooms"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Diplôme",
+      "educationalLevel": "Bachelor",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "EPITECH"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Certification",
+      "educationalLevel": "Certification création d’applications iOS",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "Simplon",
+        "startDate": "2021",
+        "endDate": "2021"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Certification",
+      "educationalLevel": "Certification RNCP développeur intégrateur web",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "OpenClassRooms",
+        "startDate": "2023",
+        "endDate": "2024"
+      }
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/mikaelposty",
+    "https://github.com/mikepixeldev",
+    "https://www.threads.net/@mikepixel.dev",
+    "https://mikepixel.dev/"
+  ],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mikaelposty.fr"
+  },
+  "description": "Développeur web & mobile, passionné par le webdesign, la photographie et les voyages."
+}
+</script>
+
+
+
+
+    <!-- Début Cookies -->
+    <script>
+        // Définissez dataLayer et la fonction gtag.
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'regions': ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE', 'IS', 'LI', 'NO']
+        });
+
+        // Définissez le consentement par défaut pour toutes les autres régions selon vos besoins
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied'
+        });
+
+    </script>
+
+    <!-- Start cookieyes banner -->
+    <script id="cookieyes" type="text/javascript"
+        src="https://cdn-cookieyes.com/client_data/5912cd638d1d275dab0a285e/script.js"></script>
+    <!-- Fin Cookies -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3c74274841.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="./script-min.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Section de branding, contient le logo et le nom du site -->
+        <div class="branding">
+            <!-- Lien de retour à l'accueil -->
+            <div id="accueil">
+                <!-- Nom du site -->
+                <p class="brand">mikaël posty</p>
+                <!-- Logo du site -->
+                <img class="logo" src="./assets/img/logo-portfolio.png"
+                    alt="Logo portfolio développeur web de Mikaël Posty">
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Section À propos de moi -->
+        <section id="about" aria-label="À propos de moi">
+            <!-- Conteneur pour l'élément visuel principal -->
+            <div id="hero">
+                <!-- Image principale de la section -->
+                <div class="hero-image">
+                    <!-- Memoji de Mikaël Posty -->
+                    <img src="./assets/img/memoji/hello-mike.webp" alt="Memoji de Mikaël Posty, développeur front-end">
+                </div>
+                <!-- Texte principal de la section -->
+                <div class="hero-text">
+                    <!-- Titre de la section -->
+                    <h1>Salut, je suis Mikaël Posty,
+                        <br>développeur front-end en France <span aria-hidden="true">🇫🇷</span>
+                        <span class="sr-only">(Drapeau français)</span>
+                    </h1>
+                    <p>J’imagine et code avec le souci du webdesign et de l’UX/UI, et j’adore ça !
+                        Quand je ne suis pas occupé à coder, je prends mon appareil photo ou je profite de la culture
+                        geek.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section dédiée aux compétences -->
+        <section id="competences" aria-label="Mes compétences">
+            <h2>COMPÉTENCES</h2>
+            <img class="skills-img" src="./assets/img/memoji/dev-mike.webp" alt="Memoji devant un Mac de Mikaël Posty"
+                loading="lazy">
+            <!-- Compétences Techniques -->
+            <div class="skills" aria-labelledby="skills-heading">
+                <h3 id="skills-heading">Techniques</h3>
+                <ul class="skills-list" aria-label="Liste de compétences techniques">
+                    <li><i class="fa-brands fa-html5" aria-label="HTML5" aria-hidden="true"></i><i
+                            class="fa-brands fa-css3-alt" aria-label="CSS3" aria-hidden="true"></i> HTML & CSS - C'est
+                        comme respirer, indispensable et naturel pour
+                        tout
+                        développeur!</li>
+                    <li><i class="fa-brands fa-sass" aria-label="SASS" aria-hidden="true"></i> SASS - Écrire des
+                        animations avec style.
+                    </li>
+                    <li><i class="fa-brands fa-square-js" aria-label="JavaScript" aria-hidden="true"></i> JavaScript -
+                        La base pour dynamiser
+                        les sites
+                        web avec interactivité.</li>
+                    <li><i class="fa-brands fa-react" aria-label="React" aria-hidden="true"></i> React - Créer des
+                        applications web
+                        modernes avec
+                        un rendu efficace.</li>
+                    <li><i class="fa-brands fa-swift" aria-label="Swift" aria-hidden="true"></i> Swift & Swift UI - Pour
+                        des applications
+                        iOS
+                        intuitives et performantes.</li>
+                    <li><i class="fa-brands fa-searchengin" aria-label="SEO" aria-hidden="true"></i> SEO - Je sais
+                        comment faire pour que
+                        Google
+                        soit mon ami.</li>
+                    <li><i class="fa-solid fa-thumbs-up" aria-label="Social Media" aria-hidden="true"></i> Communication
+                        Social Media - J'ai connu
+                        Instagram avant que ça soit mainstream.</li>
+                    <li><i class="fa-brands fa-wordpress" aria-label="WordPress" aria-hidden="true"></i> WordPress - Le
+                        CMS le plus
+                        populaire pour créer facilement des sites sans écrire une ligne de code.</li>
+
+                </ul>
+            </div>
+
+            <!-- Soft skills -->
+            <div class="soft-skills" aria-labelledby="soft-skills-heading">
+                <h3 id="soft-skills-heading">Personnelles</h3>
+                <ul class="soft-skills-list" aria-label="Liste de compétences personnelles">
+                    <li><i class="fa fa-search-plus" aria-label="Curiosité" aria-hidden="true"></i> Curieux - Toujours à
+                        la recherche de
+                        nouveautés à
+                        apprendre.</li>
+                    <li><i class="fa fa-brain" aria-label="Esprit critique" aria-hidden="true"></i> Esprit critique - Je
+                        questionne, donc je suis.
+                    </li>
+                    <li><i class="fa fa-puzzle-piece" aria-label="Esprit critique" aria-hidden="true"></i> Résolution de
+                        problèmes - Chaque problème
+                        a sa
+                        solution.</li>
+                    <li><i class="fa fa-users" aria-label="Travail d'équipe" aria-hidden="true"></i> Travail d'équipe -
+                        Seul on va plus vite, ensemble
+                        on va
+                        plus loin.</li>
+                    <li><i class="fa fa-rocket" aria-label="Créativité" aria-hidden="true"></i> Créativité - Penser en
+                        dehors de la boîte n'est
+                        pas
+                        juste une expression.</li>
+                    <li><i class="fa fa-tasks" aria-label="Organisation" aria-hidden="true"></i> Organisation - Tout est
+                        en ordre, même mes
+                        onglets de
+                        navigateur.</li>
+                </ul>
+            </div>
+
+            <!-- Accent sur le Design et l'Expérience Utilisateur -->
+            <div class="design-focus" aria-label="Accent sur le Design et l'Expérience Utilisateur">
+                <p>
+                    <strong>Web design & UX/UI (<em>En cours d'apprentissage</em>) :</strong> Je conçois avec passion
+                    pour
+                    que beauté rime avec utilité,
+                    assurant des
+                    expériences à la fois captivantes et accessibles.
+                </p>
+            </div>
+        </section>
+
+        <!-- Section dédiée aux projets réalisés -->
+        <section id="projets" aria-label="Projets réalisés">
+            <!-- Titre de la section des projets -->
+            <h2>PROJETS</h2>
+            <!-- Conteneur pour les cartes de projet -->
+            <div class="projet-cards">
+                <!-- Projet individuel : Sophie Bluel Architecte -->
+                <div class="projet sophiebluel">
+                    <!-- Description du projet -->
+                    <div class="projet-texte projet-half">
+                        <h3>Sophie Bluel Architecte</h3>
+                        <p><strong>J’ai développé une interface interactive en JavaScript</strong> pour un portfolio
+                            d’architecte
+                            d’intérieur, dans le cadre d’un
+                            projet avec <strong>OpenClassRooms</strong>. Cette interface intègre des fonctionnalités
+                            dynamiques grâce à
+                            la manipulation du DOM et à
+                            la gestion des interactions utilisateurs, via une API REST.</p>
+                        <!-- Lien vers le repository GitHub du projet -->
+                        <a class="repo-link"
+                            href="https://github.com/mikepixeldev/OCR-DIW-Projet6-SophieBluel-Architecte"
+                            target="_blank" rel="noopener noreferrer"
+                            title="Voir le projet Sophie Bluel Architecte sur GitHub"
+                            aria-label="Voir le projet Sophie Bluel Architecte sur GitHub">
+                            <p>Voir le projet sur GitHub</p> <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- Présentation visuelle du projet -->
+                    <div class="projet-pres projet-half">
+                        <img class="img-projet" src="./assets/img/sophiebluel-logo.png"
+                            alt="Logo du projet Sophie Bluel - Architecte" loading="lazy">
+                        <!-- Icônes des technologies utilisées -->
+                        <div class="technos"><i class="fa-brands fa-js"></i><i class="fa-brands fa-html5"></i> <i
+                                class="fa-brands fa-css3-alt"></i></div>
+                    </div>
+                </div>
+                <!-- Projet individuel : Ohmyfood -->
+                <div class="projet ohmyfood">
+                    <!-- Description du projet -->
+                    <div class="projet-texte projet-half">
+                        <h3>Ohmyfood</h3>
+                        <p><strong>Optimisation d’une interface mobile avec Sass et animations CSS.</strong> Dans ce
+                            projet
+                            <strong>OpenClassRooms</strong>, j’ai transformé
+                            l’interface d’une start-up en adoptant une approche mobile-first, en utilisant Sass pour une
+                            gestion efficace du CSS et
+                            en intégrant des animations pour améliorer l’expérience utilisateur.
+                        </p>
+                        <!-- Lien vers le repository GitHub du projet -->
+                        <a class="repo-link" href="https://github.com/mikepixeldev/OCR-DIW-Projet4-Ohmyfood"
+                            target="_blank" rel="noopener noreferrer" title="Voir le projet Ohmyfood sur GitHub"
+                            aria-label="Voir le projet Ohmyfood sur GitHub">
+                            <p>Voir le projet sur GitHub</p> <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- Présentation visuelle du projet -->
+                    <div class="projet-pres projet-half">
+                        <img class="img-projet" src="./assets/img/ohmyfood-logo.png" alt="Logo du projet Ohmyfood"
+                            loading="lazy">
+                        <!-- Icônes des technologies utilisées -->
+                        <div class="technos"><i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i
+                                class="fa-brands fa-sass"></i></div>
+                    </div>
+                </div>
+                <!-- Projet individuel : Cinématch -->
+                <div class="projet cinematch">
+                    <!-- Description du projet -->
+                    <div class="projet-texte projet-half">
+                        <h3>Cinématch</h3>
+                        <p>Simplification de la sélection de films via une interface inspirée par Tinder.
+                            <br> <strong>Ce prototype d’application iOS, conçu en Swift & Swift UI, dans le cadre de
+                                l’<a href="https://www.apple.com/fr/newsroom/2018/10/apple-announces-first-of-its-kind-coding-program-in-france"
+                                    target="_blank" rel="noopener noreferrer"
+                                    title="Lire plus sur l'Apple Foundation Program"
+                                    aria-label="En savoir plus sur l'Apple Foundation Program">Apple Foundation
+                                    Program</a></strong>,
+                            permet une
+                            sélection rapide de films grâce à des gestes intuitifs.
+                        </p>
+                        <!-- Lien vers le repository GitHub du projet -->
+                        <a class="repo-link" href="https://github.com/mikepixeldev/cinematch-prototype-alpha"
+                            target="_blank" rel="noopener noreferrer" title="Voir le projet Cinématch sur GitHub"
+                            aria-label="Voir le projet Cinématch sur GitHub">
+                            <p>Voir le projet sur GitHub</p> <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <!-- Présentation visuelle du projet -->
+                    <div class="projet-pres projet-half">
+                        <img class="img-projet" src="./assets/img/cinematch-logo.png"
+                            alt="Logo du projet d'app Cinématch" loading="lazy">
+                        <!-- Icônes des technologies utilisées -->
+                        <div class="technos"><i class="fa-brands fa-apple"></i><i class="fa-brands fa-swift"></i><i
+                                class="fa-brands fa-app-store"></i></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lien pour voir plus de projets -->
+            <a class="projets-voir-plus" href="https://github.com/mikepixeldev?tab=repositories" target="_blank"
+                rel="noopener noreferrer" title="Voir plus de projets sur GitHub"
+                aria-label="Explorer plus de projets sur GitHub">
+                <i class="fa-brands fa-github"></i>
+                <p>Voir plus de projets sur GitHub</p>
+            </a>
+        </section>
+
+        <!-- Section dédiée au parcours professionnel -->
+        <section id="parcours" aria-label="Mon parcours professionnel">
+            <!-- Titre de la section du parcours -->
+            <h2>PARCOURS</h2>
+            <img class="parcours-img" src="./assets/img/memoji/zen-mike.webp" alt="Memoji de parcours professionnel"
+                loading="lazy">
+            <!-- Ligne du temps pour représenter le parcours professionnel -->
+            <div class="timeline">
+                <!-- Expérience professionnelle à EPITECH -->
+                <div class="experience timeline-left">
+                    <!-- Détails de l'expérience à EPITECH -->
+                    <div class="timeline-infos">
+                        <h3 class="visually-hidden">EPITECH</h3>
+                        <a href="https://www.epitech.eu" target="_blank" rel="noopener noreferrer"
+                            title="Visitez le site d'EPITECH" aria-label="Visitez le site d'EPITECH">
+                            <img src="./assets/img/parcours/epitech-logo.webp" alt="Logo de l'école EPITECH"
+                                loading="lazy"></a>
+                        <p>École d'ingénieur en informatique</p>
+                        <p class="years-timeline">2009-2010</p>
+                    </div>
+                </div>
+                <!-- Expérience professionnelle comme Social Media Manager -->
+                <div class="experience timeline-right">
+                    <!-- Détails de l'expérience en tant que Social Media Manager -->
+                    <div class="timeline-infos">
+                        <h3>Social Media Manager</h3>
+                        <div class="collabs">
+                            <p>Collaborations avec</p>
+                            <div class="collab-logos" role="presentation">
+                                <a href="https://www.orange.com" target="_blank" rel="noopener noreferrer"
+                                    title="Visitez le site d'Orange" aria-label="Visitez le site d'Orange">
+                                    <img src="./assets/img/parcours/logo-orange.webp" alt="Logo Orange"
+                                        loading="lazy"></a>
+
+                                <a href="https://www.groupe-sncf.com" target="_blank" rel="noopener noreferrer"
+                                    title="Visitez le site de SNCF" aria-label="Visitez le site de SNCF">
+                                    <img src="./assets/img/parcours/logo-sncf.webp" alt="Logo SNCF" loading="lazy"></a>
+
+                                <a href="https://www.garesetconnexions.sncf" target="_blank" rel="noopener noreferrer"
+                                    title="Visitez le site de Gares & Connexions SNCF"
+                                    aria-label="Visitez le site de Gares & Connexions SNCF">
+                                    <img src="./assets/img/parcours/logo-gares-&-connexions-sncf.webp"
+                                        alt="Logo Gares & Connexions SNCF" loading="lazy"></a>
+                            </div>
+                        </div>
+                        <p class="years-timeline">2010-2020</p>
+                    </div>
+                </div>
+                <!-- Formation à Simplon -->
+                <div class="experience timeline-left">
+                    <!-- Détails de la formation à Simplon -->
+                    <div class="timeline-infos">
+                        <h3 class="visually-hidden">Simplon</h3>
+                        <a href="https://simplon.co" target="_blank" rel="noopener noreferrer"
+                            title="Visitez le site de Simplon" aria-label="Visitez le site de Simplon">
+                            <img src="./assets/img/parcours/simplon-logo.webp" alt="Logo de l'école Simplon"
+                                loading="lazy"></a>
+                        <p><i class="fa-brands fa-apple"></i> Apple Foundation Program</p>
+                        <p class="years-timeline">2021</p>
+                    </div>
+                </div>
+                <!-- Formation à OpenClassRooms -->
+                <div class="experience timeline-right">
+                    <!-- Détails de la formation à OpenClassRooms -->
+                    <div class="timeline-infos">
+                        <h3 class="visually-hidden">OpenClassRooms</h3>
+                        <a href="https://openclassrooms.com" target="_blank" rel="noopener noreferrer"
+                            title="Visitez le site d'OpenClassRooms" aria-label="Visitez le site d'OpenClassRooms">
+                            <img src="./assets/img/parcours/logo-openclassrooms.webp" alt="Logo d'OpenClassRooms"
+                                loading="lazy"></a>
+                        <p>Formation Développeur intégrateur web</p>
+                        <p class="years-timeline">2023-2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section de contact -->
+        <section id="contact" aria-label="Me contacter">
+            <!-- Titre de la section de contact -->
+            <h2>CONTACT</h2>
+            <img class="contact-img" src="./assets/img/memoji/call-mike.webp" alt="Memoji de contact" loading="lazy">
+            <p>Vous avez un projet en tête ou souhaitez en savoir plus sur mon travail ? N'hésitez pas à me contacter.
+                <br> Je suis toujours ouvert pour discuter de nouvelles opportunités ou de collaborations créatives.
+            </p>
+
+            <!-- Coordonnées -->
+            <div class="contact-info">
+                <p>Vous pouvez me joindre sur les réseaux sociaux ou par e-mail directement. </p>
+                <p><strong> E-mail :</strong> <span id="email-link">Cliquez ici pour voir l'e-mail</span></p>
+            </div>
+
+            <!-- Liens vers les réseaux sociaux -->
+            <div id="social-media">
+                <h3>Suivez-moi</h3>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mikaelposty" target="_blank" rel="noopener noreferrer"
+                        title="Visitez mon profil LinkedIn" aria-label="Visitez mon profil LinkedIn">
+                        <i class="fa-brands fa-linkedin fa-2xl"></i>
+                    </a>
+                    <a href="https://github.com/mikepixeldev" target="_blank" rel="noopener noreferrer"
+                        title="Visitez mon profil GitHub" aria-label="Visitez mon profil GitHub">
+                        <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                    <a href="https://www.threads.net/@mikepixel.dev" target="_blank" rel="noopener noreferrer"
+                        title="Visitez mon profil Threads" aria-label="Visitez mon profil Threads">
+                        <i class="fa-brands fa-threads fa-2xl"></i>
+                    </a>
+                    <a href="https://mikepixel.dev/" target="_blank" rel="noopener noreferrer"
+                        title="Visitez mon site personnel" aria-label="Visitez mon site personnel">
+                        <i class="fa-solid fa-globe fa-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <!-- Mention de droit d'auteur avec l'année dynamique et version du site -->
+            <p id="copyright">
+                © <span id="year"></span> – v1.0 (v2.0 soon) – Code with love ♥️ by
+                <!-- Lien vers le site personnel -->
+                <a href="https://mikaelposty.fr" target="_blank" rel="noopener noreferrer"
+                    title="Visitez mon site personnel" aria-label="Visitez mon site personnel">Mike</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bouton pour retourner en haut de la page -->
+    <button id="backToTop" aria-label="Retour en haut de la page">
+        <!-- Icône du bouton avec aria-hidden pour éviter la lecture par les lecteurs d'écran -->
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+</body>
+
+</html>

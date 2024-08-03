@@ -1,0 +1,1 @@
+@charset "UTF-8";@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}#about,#competences,#projets,#parcours,#contact{animation:fadeIn 1s ease-out forwards;opacity:0;}#about{animation-delay:.5s;}#competences{animation-delay:1s;}#projets{animation-delay:1.5s;}#parcours{animation-delay:2s;}#contact{animation-delay:2.5s;}

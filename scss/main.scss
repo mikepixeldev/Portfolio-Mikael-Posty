@@ -1,0 +1,36 @@
+// /main.scss
+// Ce fichier principal importe et compile tous les autres fichiers de style SCSS.
+
+// Importation des fichiers de base pour les styles de reset et de typographie.
+@import 'base/reset';
+@import 'base/typography';
+
+// Importation des utilitaires pour les variables, mixins, fonctions et placeholders.
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'utils/placeholders';
+
+// Importation des composants réutilisables.
+@import 'components/buttons';
+@import 'components/dropdown';
+@import 'components/navigation';
+@import 'components/card';
+
+// Importation des styles de layout pour le header, footer et grid.
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/grid';
+
+// Importation des styles spécifiques à chaque section de la page.
+@import 'layout/about';
+@import 'layout/competences';
+@import 'layout/contact';
+@import 'layout/parcours';
+@import 'layout/projets';
+
+// Importation des styles spécifiques à chaque page.
+@import 'pages/home';
+
+// Importation des thèmes.
+@import 'themes/theme';

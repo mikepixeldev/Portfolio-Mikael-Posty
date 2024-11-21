@@ -16,7 +16,7 @@ Vous pouvez consulter le portfolio en ligne à l'adresse suivante : [portfolio.m
 
 ## Roadmap
 
-- **V1.8** : Migrer vers SCSS
+- **V1.8** : Migrer vers totalement vers SCSS
 - **V2.0** : Migrer vers React
 
 ## Technologies utilisées
